@@ -2,7 +2,7 @@ package com.cvbuilder.services;
 
 import com.cvbuilder.entities.Education;
 import com.cvbuilder.entities.CV;
-import com.cvbuilder.repositories.EducationRepository;
+import com.cvbuilder.Repositories.EducationRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;

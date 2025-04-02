@@ -2,7 +2,7 @@ package com.cvbuilder.services;
 
 import com.cvbuilder.entities.WorkExperience;
 import com.cvbuilder.entities.CV;
-import com.cvbuilder.repositories.WorkExperienceRepository;
+import com.cvbuilder.Repositories.WorkExperienceRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.cvbuilder.exceptions.InvalidDataException;
