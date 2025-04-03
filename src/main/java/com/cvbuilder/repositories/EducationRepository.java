@@ -1,4 +1,4 @@
-package com.cvbuilder.Repositories;
+package com.cvbuilder.repositories;
 
 import com.cvbuilder.entities.Education;
 import com.cvbuilder.entities.CV;

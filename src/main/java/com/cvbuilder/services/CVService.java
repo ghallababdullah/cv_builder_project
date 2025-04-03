@@ -2,7 +2,7 @@ package com.cvbuilder.services;
 
 import com.cvbuilder.entities.CV;
 import com.cvbuilder.entities.User;
-import com.cvbuilder.Repositories.CVRepository;
+import com.cvbuilder.repositories.CVRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;

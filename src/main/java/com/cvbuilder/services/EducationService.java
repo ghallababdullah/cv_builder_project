@@ -2,7 +2,7 @@ package com.cvbuilder.services;
 
 import com.cvbuilder.entities.Education;
 import com.cvbuilder.entities.CV;
-import com.cvbuilder.Repositories.EducationRepository;
+import com.cvbuilder.repositories.EducationRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
@@ -19,6 +19,9 @@ public class EducationService {
     public EducationService(EducationRepository educationRepository, CVService cvService) {
         this.educationRepository = educationRepository;
         this.cvService = cvService;
+    }
+    public List<Education> getEducationsByCV(Long cvId) {
+        return educationRepository.findByCvId(cvId);
     }
 
     public Education addEducation(Education education, Long cvId) {
@@ -40,6 +43,9 @@ public class EducationService {
     }
 
     public void deleteEducation(Long id) {
+        if (!educationRepository.existsById(id)) {
+            throw new NotFoundException("Education not found");
+        }
         educationRepository.deleteById(id);
     }
 }

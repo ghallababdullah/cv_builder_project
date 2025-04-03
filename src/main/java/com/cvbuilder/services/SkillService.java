@@ -2,13 +2,12 @@ package com.cvbuilder.services;
 
 import com.cvbuilder.entities.Skill;
 import com.cvbuilder.entities.CV;
-import com.cvbuilder.Repositories.SkillRepository;
+import com.cvbuilder.repositories.SkillRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import com.cvbuilder.exceptions.InvalidDataException;
-import com.cvbuilder.exceptions.NotFoundException;
-import com.cvbuilder.exceptions.AlreadyExistsException;
+
 @Service
 @Transactional
 public class SkillService {

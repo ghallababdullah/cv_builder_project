@@ -5,6 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 @Entity
+@Table(name = "app_user")
 @Data
 public class User {
 
@@ -13,7 +14,7 @@ public class User {
     private Long id;
 
     @Column(unique = true, nullable = false)
-    private String Email;
+    private String email;
 
     @Column(nullable = false)
     private String password;
@@ -25,7 +26,7 @@ public class User {
     // Add this constructor
     public User(String username, String email,String pass) {
         this.fullName = username;
-        this.Email = email;
+        this.email = email;
         this.password = pass;
     }
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)

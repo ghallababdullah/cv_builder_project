@@ -3,7 +3,7 @@ package com.cvbuilder.services;
 
 import com.cvbuilder.entities.User;
 import com.cvbuilder.exceptions.AlreadyExistsException;
-import com.cvbuilder.Repositories.UserRepository;
+import com.cvbuilder.repositories.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

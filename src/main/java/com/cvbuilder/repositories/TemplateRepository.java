@@ -1,4 +1,4 @@
-package com.cvbuilder.Repositories;
+package com.cvbuilder.repositories;
 
 import com.cvbuilder.entities.Template;
 import org.springframework.data.jpa.repository.JpaRepository;

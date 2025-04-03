@@ -1,13 +1,12 @@
 package com.cvbuilder.services;
 
 import com.cvbuilder.entities.User;
-import com.cvbuilder.Repositories.UserRepository;
+import com.cvbuilder.repositories.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.cvbuilder.exceptions.InvalidDataException;
 import com.cvbuilder.exceptions.NotFoundException;
 import com.cvbuilder.exceptions.AlreadyExistsException;
-import java.util.List;
 
 @Service
 @Transactional

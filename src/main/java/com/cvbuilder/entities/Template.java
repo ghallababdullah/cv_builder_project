@@ -13,7 +13,7 @@ public class Template {
 
     private String name;
     private String previewImageUrl;  // Path to template thumbnail
-
+    private Integer downloadCount = 0;
     @OneToMany(mappedBy = "template")
     private List<CV> cvs;  // One template can be used by many CVs
 }
